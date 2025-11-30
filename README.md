@@ -156,4 +156,4 @@ ng.h:50:8: error: expected ‘;’ at end of member declaration 50 | bool runnin
   697 |   Condition(bool (*func)(T*), T* arg);
 ```
 
-> 由于 log 过长，全 log 请参考[这里]。
+> 由于 log 过长，全 log 请参考[这里](https://raw.githubusercontent.com/Sebastianhayashi/Cartographer_test/refs/heads/main/absl_log.txt)。
