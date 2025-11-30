@@ -1,0 +1,868 @@
+[1/324] Building CXX object CMakeFiles/cartographer.dir/cartographer/common/thread_pool.cc.o
+FAILED: CMakeFiles/cartographer.dir/cartographer/common/thread_pool.cc.o 
+/usr/bin/c++ -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DGFLAGS_IS_A_DLL=0 -DGLOG_CUSTOM_PREFIX_SUPPORT -I/home/bianbu/cartographer/build -isystem /usr/include/eigen3 -isystem /home/bianbu/cartographer -isystem /usr/include/lua5.3 -O3 -DNDEBUG  -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -MD -MT CMakeFiles/cartographer.dir/cartographer/common/thread_pool.cc.o -MF CMakeFiles/cartographer.dir/cartographer/common/thread_pool.cc.o.d -o CMakeFiles/cartographer.dir/cartographer/common/thread_pool.cc.o -c /home/bianbu/cartographer/cartographer/common/thread_pool.cc
+In file included from /home/bianbu/cartographer/cartographer/common/thread_pool.h:28,
+                 from /home/bianbu/cartographer/cartographer/common/thread_pool.cc:17:
+/home/bianbu/cartographer/cartographer/common/task.h:41:18: error: expected ‘;’ at end of member declaration
+   41 |   State GetState() LOCKS_EXCLUDED(mutex_);
+      |                  ^
+      |                   ;
+/home/bianbu/cartographer/cartographer/common/task.h:41:35: error: ‘mutex_’ has not been declared
+   41 |   State GetState() LOCKS_EXCLUDED(mutex_);
+      |                                   ^~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:44:45: error: expected ‘;’ at end of member declaration
+   44 |   void SetWorkItem(const WorkItem& work_item) LOCKS_EXCLUDED(mutex_);
+      |                                             ^
+      |                                              ;
+/home/bianbu/cartographer/cartographer/common/task.h:44:62: error: ‘mutex_’ has not been declared
+   44 |   void SetWorkItem(const WorkItem& work_item) LOCKS_EXCLUDED(mutex_);
+      |                                                              ^~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:44:47: error: ‘int cartographer::common::Task::LOCKS_EXCLUDED(int)’ cannot be overloaded with ‘int cartographer::common::Task::LOCKS_EXCLUDED(int)’
+   44 |   void SetWorkItem(const WorkItem& work_item) LOCKS_EXCLUDED(mutex_);
+      |                                               ^~~~~~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:41:20: note: previous declaration ‘int cartographer::common::Task::LOCKS_EXCLUDED(int)’
+   41 |   State GetState() LOCKS_EXCLUDED(mutex_);
+      |                    ^~~~~~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:48:52: error: expected ‘;’ at end of member declaration
+   48 |   void AddDependency(std::weak_ptr<Task> dependency) LOCKS_EXCLUDED(mutex_);
+      |                                                    ^
+      |                                                     ;
+/home/bianbu/cartographer/cartographer/common/task.h:48:69: error: ‘mutex_’ has not been declared
+   48 |   void AddDependency(std::weak_ptr<Task> dependency) LOCKS_EXCLUDED(mutex_);
+      |                                                                     ^~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:48:54: error: ‘int cartographer::common::Task::LOCKS_EXCLUDED(int)’ cannot be overloaded with ‘int cartographer::common::Task::LOCKS_EXCLUDED(int)’
+   48 |   void AddDependency(std::weak_ptr<Task> dependency) LOCKS_EXCLUDED(mutex_);
+      |                                                      ^~~~~~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:41:20: note: previous declaration ‘int cartographer::common::Task::LOCKS_EXCLUDED(int)’
+   41 |   State GetState() LOCKS_EXCLUDED(mutex_);
+      |                    ^~~~~~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:55:16: error: expected ‘;’ at end of member declaration
+   55 |   void Execute() LOCKS_EXCLUDED(mutex_);
+      |                ^
+      |                 ;
+/home/bianbu/cartographer/cartographer/common/task.h:55:33: error: ‘mutex_’ has not been declared
+   55 |   void Execute() LOCKS_EXCLUDED(mutex_);
+      |                                 ^~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:55:18: error: ‘int cartographer::common::Task::LOCKS_EXCLUDED(int)’ cannot be overloaded with ‘int cartographer::common::Task::LOCKS_EXCLUDED(int)’
+   55 |   void Execute() LOCKS_EXCLUDED(mutex_);
+      |                  ^~~~~~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:41:20: note: previous declaration ‘int cartographer::common::Task::LOCKS_EXCLUDED(int)’
+   41 |   State GetState() LOCKS_EXCLUDED(mutex_);
+      |                    ^~~~~~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:58:54: error: expected ‘;’ at end of member declaration
+   58 |   void SetThreadPool(ThreadPoolInterface* thread_pool) LOCKS_EXCLUDED(mutex_);
+      |                                                      ^
+      |                                                       ;
+/home/bianbu/cartographer/cartographer/common/task.h:58:71: error: ‘mutex_’ has not been declared
+   58 |   void SetThreadPool(ThreadPoolInterface* thread_pool) LOCKS_EXCLUDED(mutex_);
+      |                                                                       ^~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:58:56: error: ‘int cartographer::common::Task::LOCKS_EXCLUDED(int)’ cannot be overloaded with ‘int cartographer::common::Task::LOCKS_EXCLUDED(int)’
+   58 |   void SetThreadPool(ThreadPoolInterface* thread_pool) LOCKS_EXCLUDED(mutex_);
+      |                                                        ^~~~~~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:41:20: note: previous declaration ‘int cartographer::common::Task::LOCKS_EXCLUDED(int)’
+   41 |   State GetState() LOCKS_EXCLUDED(mutex_);
+      |                    ^~~~~~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:64:12: error: expected ‘;’ at end of member declaration
+   64 |   WorkItem work_item_ GUARDED_BY(mutex_);
+      |            ^~~~~~~~~~
+      |                      ;
+/home/bianbu/cartographer/cartographer/common/task.h:64:34: error: ‘mutex_’ has not been declared
+   64 |   WorkItem work_item_ GUARDED_BY(mutex_);
+      |                                  ^~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:65:24: error: expected ‘;’ at end of member declaration
+   65 |   ThreadPoolInterface* thread_pool_to_notify_ GUARDED_BY(mutex_) = nullptr;
+      |                        ^~~~~~~~~~~~~~~~~~~~~~
+      |                                              ;
+/home/bianbu/cartographer/cartographer/common/task.h:65:58: error: ‘mutex_’ has not been declared
+   65 |   ThreadPoolInterface* thread_pool_to_notify_ GUARDED_BY(mutex_) = nullptr;
+      |                                                          ^~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:65:75: error: invalid pure specifier (only ‘= 0’ is allowed) before ‘;’ token
+   65 |   ThreadPoolInterface* thread_pool_to_notify_ GUARDED_BY(mutex_) = nullptr;
+      |                                                                           ^
+/home/bianbu/cartographer/cartographer/common/task.h:65:47: error: ‘int cartographer::common::Task::GUARDED_BY(int)’ cannot be overloaded with ‘int cartographer::common::Task::GUARDED_BY(int)’
+   65 |   ThreadPoolInterface* thread_pool_to_notify_ GUARDED_BY(mutex_) = nullptr;
+      |                                               ^~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:64:23: note: previous declaration ‘int cartographer::common::Task::GUARDED_BY(int)’
+   64 |   WorkItem work_item_ GUARDED_BY(mutex_);
+      |                       ^~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:66:9: error: expected ‘;’ at end of member declaration
+   66 |   State state_ GUARDED_BY(mutex_) = NEW;
+      |         ^~~~~~
+      |               ;
+/home/bianbu/cartographer/cartographer/common/task.h:66:27: error: ‘mutex_’ has not been declared
+   66 |   State state_ GUARDED_BY(mutex_) = NEW;
+      |                           ^~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:66:40: error: invalid pure specifier (only ‘= 0’ is allowed) before ‘;’ token
+   66 |   State state_ GUARDED_BY(mutex_) = NEW;
+      |                                        ^
+/home/bianbu/cartographer/cartographer/common/task.h:66:16: error: ‘int cartographer::common::Task::GUARDED_BY(int)’ cannot be overloaded with ‘int cartographer::common::Task::GUARDED_BY(int)’
+   66 |   State state_ GUARDED_BY(mutex_) = NEW;
+      |                ^~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:64:23: note: previous declaration ‘int cartographer::common::Task::GUARDED_BY(int)’
+   64 |   WorkItem work_item_ GUARDED_BY(mutex_);
+      |                       ^~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:67:16: error: expected ‘;’ at end of member declaration
+   67 |   unsigned int uncompleted_dependencies_ GUARDED_BY(mutex_) = 0;
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         ;
+/home/bianbu/cartographer/cartographer/common/task.h:67:53: error: ‘mutex_’ has not been declared
+   67 |   unsigned int uncompleted_dependencies_ GUARDED_BY(mutex_) = 0;
+      |                                                     ^~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:67:42: error: ‘int cartographer::common::Task::GUARDED_BY(int)’ cannot be overloaded with ‘int cartographer::common::Task::GUARDED_BY(int)’
+   67 |   unsigned int uncompleted_dependencies_ GUARDED_BY(mutex_) = 0;
+      |                                          ^~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:64:23: note: previous declaration ‘int cartographer::common::Task::GUARDED_BY(int)’
+   64 |   WorkItem work_item_ GUARDED_BY(mutex_);
+      |                       ^~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:68:19: error: expected ‘;’ at end of member declaration
+   68 |   std::set<Task*> dependent_tasks_ GUARDED_BY(mutex_);
+      |                   ^~~~~~~~~~~~~~~~
+      |                                   ;
+/home/bianbu/cartographer/cartographer/common/task.h:68:47: error: ‘mutex_’ has not been declared
+   68 |   std::set<Task*> dependent_tasks_ GUARDED_BY(mutex_);
+      |                                               ^~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:68:36: error: ‘int cartographer::common::Task::GUARDED_BY(int)’ cannot be overloaded with ‘int cartographer::common::Task::GUARDED_BY(int)’
+   68 |   std::set<Task*> dependent_tasks_ GUARDED_BY(mutex_);
+      |                                    ^~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:64:23: note: previous declaration ‘int cartographer::common::Task::GUARDED_BY(int)’
+   64 |   WorkItem work_item_ GUARDED_BY(mutex_);
+      |                       ^~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/thread_pool.h:67:58: error: expected ‘;’ at end of member declaration
+   67 |   std::weak_ptr<Task> Schedule(std::unique_ptr<Task> task)
+      |                                                          ^
+      |                                                           ;
+/home/bianbu/cartographer/cartographer/common/thread_pool.h:68:22: error: ‘mutex_’ has not been declared
+   68 |       LOCKS_EXCLUDED(mutex_) override;
+      |                      ^~~~~~
+/home/bianbu/cartographer/cartographer/common/thread_pool.h:73:46: error: expected ‘;’ at end of member declaration
+   73 |   void NotifyDependenciesCompleted(Task* task) LOCKS_EXCLUDED(mutex_) override;
+      |                                              ^
+      |                                               ;
+/home/bianbu/cartographer/cartographer/common/thread_pool.h:73:63: error: ‘mutex_’ has not been declared
+   73 |   void NotifyDependenciesCompleted(Task* task) LOCKS_EXCLUDED(mutex_) override;
+      |                                                               ^~~~~~
+/home/bianbu/cartographer/cartographer/common/thread_pool.h:73:48: error: ‘int cartographer::common::ThreadPool::LOCKS_EXCLUDED(int)’ cannot be overloaded with ‘int cartographer::common::ThreadPool::LOCKS_EXCLUDED(int)’
+   73 |   void NotifyDependenciesCompleted(Task* task) LOCKS_EXCLUDED(mutex_) override;
+      |                                                ^~~~~~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/thread_pool.h:68:7: note: previous declaration ‘int cartographer::common::ThreadPool::LOCKS_EXCLUDED(int)’
+   68 |       LOCKS_EXCLUDED(mutex_) override;
+      |       ^~~~~~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/thread_pool.h:76:8: error: expected ‘;’ at end of member declaration
+   76 |   bool running_ GUARDED_BY(mutex_) = true;
+      |        ^~~~~~~~
+      |                ;
+/home/bianbu/cartographer/cartographer/common/thread_pool.h:76:28: error: ‘mutex_’ is not a type
+   76 |   bool running_ GUARDED_BY(mutex_) = true;
+      |                            ^~~~~~
+/home/bianbu/cartographer/cartographer/common/thread_pool.h:76:42: error: invalid pure specifier (only ‘= 0’ is allowed) before ‘;’ token
+   76 |   bool running_ GUARDED_BY(mutex_) = true;
+      |                                          ^
+/home/bianbu/cartographer/cartographer/common/thread_pool.h:77:28: error: expected ‘;’ at end of member declaration
+   77 |   std::vector<std::thread> pool_ GUARDED_BY(mutex_);
+      |                            ^~~~~
+      |                                 ;
+/home/bianbu/cartographer/cartographer/common/thread_pool.h:77:45: error: ‘mutex_’ is not a type
+   77 |   std::vector<std::thread> pool_ GUARDED_BY(mutex_);
+      |                                             ^~~~~~
+/home/bianbu/cartographer/cartographer/common/thread_pool.h:77:34: error: ‘int cartographer::common::ThreadPool::GUARDED_BY(int)’ cannot be overloaded with ‘int cartographer::common::ThreadPool::GUARDED_BY(int)’
+   77 |   std::vector<std::thread> pool_ GUARDED_BY(mutex_);
+      |                                  ^~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/thread_pool.h:76:17: note: previous declaration ‘int cartographer::common::ThreadPool::GUARDED_BY(int)’
+   76 |   bool running_ GUARDED_BY(mutex_) = true;
+      |                 ^~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/thread_pool.h:78:37: error: expected ‘;’ at end of member declaration
+   78 |   std::deque<std::shared_ptr<Task>> task_queue_ GUARDED_BY(mutex_);
+      |                                     ^~~~~~~~~~~
+      |                                                ;
+/home/bianbu/cartographer/cartographer/common/thread_pool.h:78:60: error: ‘mutex_’ is not a type
+   78 |   std::deque<std::shared_ptr<Task>> task_queue_ GUARDED_BY(mutex_);
+      |                                                            ^~~~~~
+/home/bianbu/cartographer/cartographer/common/thread_pool.h:78:49: error: ‘int cartographer::common::ThreadPool::GUARDED_BY(int)’ cannot be overloaded with ‘int cartographer::common::ThreadPool::GUARDED_BY(int)’
+   78 |   std::deque<std::shared_ptr<Task>> task_queue_ GUARDED_BY(mutex_);
+      |                                                 ^~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/thread_pool.h:76:17: note: previous declaration ‘int cartographer::common::ThreadPool::GUARDED_BY(int)’
+   76 |   bool running_ GUARDED_BY(mutex_) = true;
+      |                 ^~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/thread_pool.h:79:53: error: expected ‘;’ at end of member declaration
+   79 |   absl::flat_hash_map<Task*, std::shared_ptr<Task>> tasks_not_ready_
+      |                                                     ^~~~~~~~~~~~~~~~
+      |                                                                     ;
+/home/bianbu/cartographer/cartographer/common/thread_pool.h:80:18: error: ‘mutex_’ is not a type
+   80 |       GUARDED_BY(mutex_);
+      |                  ^~~~~~
+/home/bianbu/cartographer/cartographer/common/thread_pool.h:80:7: error: ‘int cartographer::common::ThreadPool::GUARDED_BY(int)’ cannot be overloaded with ‘int cartographer::common::ThreadPool::GUARDED_BY(int)’
+   80 |       GUARDED_BY(mutex_);
+      |       ^~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/thread_pool.h:76:17: note: previous declaration ‘int cartographer::common::ThreadPool::GUARDED_BY(int)’
+   76 |   bool running_ GUARDED_BY(mutex_) = true;
+      |                 ^~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/thread_pool.h:68:7: error: ‘int cartographer::common::ThreadPool::LOCKS_EXCLUDED(int)’ marked ‘override’, but does not override
+   68 |       LOCKS_EXCLUDED(mutex_) override;
+      |       ^~~~~~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/thread_pool.cc: In lambda function:
+/home/bianbu/cartographer/cartographer/common/thread_pool.cc:86:35: error: expected ‘{’ before ‘EXCLUSIVE_LOCKS_REQUIRED’
+   86 |   const auto predicate = [this]() EXCLUSIVE_LOCKS_REQUIRED(mutex_) {
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/thread_pool.cc: In member function ‘void cartographer::common::ThreadPool::DoWork()’:
+/home/bianbu/cartographer/cartographer/common/thread_pool.cc:86:35: error: expected ‘,’ or ‘;’ before ‘EXCLUSIVE_LOCKS_REQUIRED’
+/home/bianbu/cartographer/cartographer/common/thread_pool.cc:93:46: error: no matching function for call to ‘absl::debian5::Condition::Condition(const cartographer::common::ThreadPool::DoWork()::<lambda()>*)’
+   93 |       mutex_.Await(absl::Condition(&predicate));
+      |                                              ^
+In file included from /usr/include/absl/strings/internal/cordz_info.h:31,
+                 from /usr/include/absl/strings/cord.h:91,
+                 from /usr/include/absl/container/internal/hash_function_defaults.h:56,
+                 from /usr/include/absl/container/flat_hash_map.h:41,
+                 from /home/bianbu/cartographer/cartographer/common/thread_pool.h:26:
+/usr/include/absl/synchronization/mutex.h:759:12: note: candidate: ‘template<class T, class E> absl::debian5::Condition::Condition(const T*)’
+  759 |   explicit Condition(const T* obj)
+      |            ^~~~~~~~~
+/usr/include/absl/synchronization/mutex.h:759:12: note:   template argument deduction/substitution failed:
+/usr/include/absl/synchronization/mutex.h:757:47: error: invalid ‘static_cast’ from type ‘void (cartographer::common::ThreadPool::DoWork()::<lambda()>::*)() const’ to type ‘bool (cartographer::common::ThreadPool::DoWork()::<lambda()>::*)() const’
+  757 |   template <typename T, typename E = decltype(static_cast<bool (T::*)() const>(
+      |                                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  758 |                             &T::operator()))>
+      |                             ~~~~~~~~~~~~~~~    
+/usr/include/absl/synchronization/mutex.h:726:3: note: candidate: ‘template<class T> absl::debian5::Condition::Condition(const T*, bool (absl::debian5::internal::identity<T>::type::*)() const)’
+  726 |   Condition(const T* object,
+      |   ^~~~~~~~~
+/usr/include/absl/synchronization/mutex.h:726:3: note:   candidate expects 2 arguments, 1 provided
+/usr/include/absl/synchronization/mutex.h:722:3: note: candidate: ‘template<class T> absl::debian5::Condition::Condition(T*, bool (absl::debian5::internal::identity<T>::type::*)())’
+  722 |   Condition(T* object, bool (absl::internal::identity<T>::type::*method)());
+      |   ^~~~~~~~~
+/usr/include/absl/synchronization/mutex.h:722:3: note:   candidate expects 2 arguments, 1 provided
+/usr/include/absl/synchronization/mutex.h:711:3: note: candidate: ‘template<class T, class> absl::debian5::Condition::Condition(bool (*)(T*), typename absl::debian5::internal::identity<T>::type*)’
+  711 |   Condition(bool (*func)(T*), typename absl::internal::identity<T>::type* arg);
+      |   ^~~~~~~~~
+/usr/include/absl/synchronization/mutex.h:711:3: note:   candidate expects 2 arguments, 1 provided
+/usr/include/absl/synchronization/mutex.h:697:3: note: candidate: ‘template<class T> absl::debian5::Condition::Condition(bool (*)(T*), T*)’
+  697 |   Condition(bool (*func)(T*), T* arg);
+      |   ^~~~~~~~~
+/usr/include/absl/synchronization/mutex.h:697:3: note:   candidate expects 2 arguments, 1 provided
+/usr/include/absl/synchronization/mutex.h:837:13: note: candidate: ‘constexpr absl::debian5::Condition::Condition()’
+  837 |   constexpr Condition() = default;
+      |             ^~~~~~~~~
+/usr/include/absl/synchronization/mutex.h:837:13: note:   candidate expects 0 arguments, 1 provided
+/usr/include/absl/synchronization/mutex.h:730:12: note: candidate: ‘absl::debian5::Condition::Condition(const bool*)’
+  730 |   explicit Condition(const bool* cond);
+      |            ^~~~~~~~~
+/usr/include/absl/synchronization/mutex.h:730:34: note:   no known conversion for argument 1 from ‘const cartographer::common::ThreadPool::DoWork()::<lambda()>*’ to ‘const bool*’
+  730 |   explicit Condition(const bool* cond);
+      |                      ~~~~~~~~~~~~^~~~
+/usr/include/absl/synchronization/mutex.h:685:3: note: candidate: ‘absl::debian5::Condition::Condition(bool (*)(void*), void*)’
+  685 |   Condition(bool (*func)(void*), void* arg);
+      |   ^~~~~~~~~
+/usr/include/absl/synchronization/mutex.h:685:3: note:   candidate expects 2 arguments, 1 provided
+/usr/include/absl/synchronization/mutex.h:682:7: note: candidate: ‘constexpr absl::debian5::Condition::Condition(const absl::debian5::Condition&)’
+  682 | class Condition {
+      |       ^~~~~~~~~
+/usr/include/absl/synchronization/mutex.h:682:7: note:   no known conversion for argument 1 from ‘const cartographer::common::ThreadPool::DoWork()::<lambda()>*’ to ‘const absl::debian5::Condition&’
+/usr/include/absl/synchronization/mutex.h:682:7: note: candidate: ‘constexpr absl::debian5::Condition::Condition(absl::debian5::Condition&&)’
+/usr/include/absl/synchronization/mutex.h:682:7: note:   no known conversion for argument 1 from ‘const cartographer::common::ThreadPool::DoWork()::<lambda()>*’ to ‘absl::debian5::Condition&&’
+[2/324] Building CXX object CMakeFiles/cartographer.dir/cartographer/common/task.cc.o
+FAILED: CMakeFiles/cartographer.dir/cartographer/common/task.cc.o 
+/usr/bin/c++ -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DGFLAGS_IS_A_DLL=0 -DGLOG_CUSTOM_PREFIX_SUPPORT -I/home/bianbu/cartographer/build -isystem /usr/include/eigen3 -isystem /home/bianbu/cartographer -isystem /usr/include/lua5.3 -O3 -DNDEBUG  -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -MD -MT CMakeFiles/cartographer.dir/cartographer/common/task.cc.o -MF CMakeFiles/cartographer.dir/cartographer/common/task.cc.o.d -o CMakeFiles/cartographer.dir/cartographer/common/task.cc.o -c /home/bianbu/cartographer/cartographer/common/task.cc
+In file included from /home/bianbu/cartographer/cartographer/common/task.h:24,
+                 from /home/bianbu/cartographer/cartographer/common/task.cc:17:
+/home/bianbu/cartographer/cartographer/common/thread_pool.h:67:58: error: expected ‘;’ at end of member declaration
+   67 |   std::weak_ptr<Task> Schedule(std::unique_ptr<Task> task)
+      |                                                          ^
+      |                                                           ;
+/home/bianbu/cartographer/cartographer/common/thread_pool.h:68:22: error: ‘mutex_’ has not been declared
+   68 |       LOCKS_EXCLUDED(mutex_) override;
+      |                      ^~~~~~
+/home/bianbu/cartographer/cartographer/common/thread_pool.h:73:46: error: expected ‘;’ at end of member declaration
+   73 |   void NotifyDependenciesCompleted(Task* task) LOCKS_EXCLUDED(mutex_) override;
+      |                                              ^
+      |                                               ;
+/home/bianbu/cartographer/cartographer/common/thread_pool.h:73:63: error: ‘mutex_’ has not been declared
+   73 |   void NotifyDependenciesCompleted(Task* task) LOCKS_EXCLUDED(mutex_) override;
+      |                                                               ^~~~~~
+/home/bianbu/cartographer/cartographer/common/thread_pool.h:73:48: error: ‘int cartographer::common::ThreadPool::LOCKS_EXCLUDED(int)’ cannot be overloaded with ‘int cartographer::common::ThreadPool::LOCKS_EXCLUDED(int)’
+   73 |   void NotifyDependenciesCompleted(Task* task) LOCKS_EXCLUDED(mutex_) override;
+      |                                                ^~~~~~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/thread_pool.h:68:7: note: previous declaration ‘int cartographer::common::ThreadPool::LOCKS_EXCLUDED(int)’
+   68 |       LOCKS_EXCLUDED(mutex_) override;
+      |       ^~~~~~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/thread_pool.h:76:8: error: expected ‘;’ at end of member declaration
+   76 |   bool running_ GUARDED_BY(mutex_) = true;
+      |        ^~~~~~~~
+      |                ;
+/home/bianbu/cartographer/cartographer/common/thread_pool.h:76:28: error: ‘mutex_’ is not a type
+   76 |   bool running_ GUARDED_BY(mutex_) = true;
+      |                            ^~~~~~
+/home/bianbu/cartographer/cartographer/common/thread_pool.h:76:42: error: invalid pure specifier (only ‘= 0’ is allowed) before ‘;’ token
+   76 |   bool running_ GUARDED_BY(mutex_) = true;
+      |                                          ^
+/home/bianbu/cartographer/cartographer/common/thread_pool.h:77:28: error: expected ‘;’ at end of member declaration
+   77 |   std::vector<std::thread> pool_ GUARDED_BY(mutex_);
+      |                            ^~~~~
+      |                                 ;
+/home/bianbu/cartographer/cartographer/common/thread_pool.h:77:45: error: ‘mutex_’ is not a type
+   77 |   std::vector<std::thread> pool_ GUARDED_BY(mutex_);
+      |                                             ^~~~~~
+/home/bianbu/cartographer/cartographer/common/thread_pool.h:77:34: error: ‘int cartographer::common::ThreadPool::GUARDED_BY(int)’ cannot be overloaded with ‘int cartographer::common::ThreadPool::GUARDED_BY(int)’
+   77 |   std::vector<std::thread> pool_ GUARDED_BY(mutex_);
+      |                                  ^~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/thread_pool.h:76:17: note: previous declaration ‘int cartographer::common::ThreadPool::GUARDED_BY(int)’
+   76 |   bool running_ GUARDED_BY(mutex_) = true;
+      |                 ^~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/thread_pool.h:78:37: error: expected ‘;’ at end of member declaration
+   78 |   std::deque<std::shared_ptr<Task>> task_queue_ GUARDED_BY(mutex_);
+      |                                     ^~~~~~~~~~~
+      |                                                ;
+/home/bianbu/cartographer/cartographer/common/thread_pool.h:78:60: error: ‘mutex_’ is not a type
+   78 |   std::deque<std::shared_ptr<Task>> task_queue_ GUARDED_BY(mutex_);
+      |                                                            ^~~~~~
+/home/bianbu/cartographer/cartographer/common/thread_pool.h:78:49: error: ‘int cartographer::common::ThreadPool::GUARDED_BY(int)’ cannot be overloaded with ‘int cartographer::common::ThreadPool::GUARDED_BY(int)’
+   78 |   std::deque<std::shared_ptr<Task>> task_queue_ GUARDED_BY(mutex_);
+      |                                                 ^~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/thread_pool.h:76:17: note: previous declaration ‘int cartographer::common::ThreadPool::GUARDED_BY(int)’
+   76 |   bool running_ GUARDED_BY(mutex_) = true;
+      |                 ^~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/thread_pool.h:79:53: error: expected ‘;’ at end of member declaration
+   79 |   absl::flat_hash_map<Task*, std::shared_ptr<Task>> tasks_not_ready_
+      |                                                     ^~~~~~~~~~~~~~~~
+      |                                                                     ;
+/home/bianbu/cartographer/cartographer/common/thread_pool.h:80:18: error: ‘mutex_’ is not a type
+   80 |       GUARDED_BY(mutex_);
+      |                  ^~~~~~
+/home/bianbu/cartographer/cartographer/common/thread_pool.h:80:7: error: ‘int cartographer::common::ThreadPool::GUARDED_BY(int)’ cannot be overloaded with ‘int cartographer::common::ThreadPool::GUARDED_BY(int)’
+   80 |       GUARDED_BY(mutex_);
+      |       ^~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/thread_pool.h:76:17: note: previous declaration ‘int cartographer::common::ThreadPool::GUARDED_BY(int)’
+   76 |   bool running_ GUARDED_BY(mutex_) = true;
+      |                 ^~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/thread_pool.h:68:7: error: ‘int cartographer::common::ThreadPool::LOCKS_EXCLUDED(int)’ marked ‘override’, but does not override
+   68 |       LOCKS_EXCLUDED(mutex_) override;
+      |       ^~~~~~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:41:18: error: expected ‘;’ at end of member declaration
+   41 |   State GetState() LOCKS_EXCLUDED(mutex_);
+      |                  ^
+      |                   ;
+/home/bianbu/cartographer/cartographer/common/task.h:41:35: error: ‘mutex_’ has not been declared
+   41 |   State GetState() LOCKS_EXCLUDED(mutex_);
+      |                                   ^~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:44:45: error: expected ‘;’ at end of member declaration
+   44 |   void SetWorkItem(const WorkItem& work_item) LOCKS_EXCLUDED(mutex_);
+      |                                             ^
+      |                                              ;
+/home/bianbu/cartographer/cartographer/common/task.h:44:62: error: ‘mutex_’ has not been declared
+   44 |   void SetWorkItem(const WorkItem& work_item) LOCKS_EXCLUDED(mutex_);
+      |                                                              ^~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:44:47: error: ‘int cartographer::common::Task::LOCKS_EXCLUDED(int)’ cannot be overloaded with ‘int cartographer::common::Task::LOCKS_EXCLUDED(int)’
+   44 |   void SetWorkItem(const WorkItem& work_item) LOCKS_EXCLUDED(mutex_);
+      |                                               ^~~~~~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:41:20: note: previous declaration ‘int cartographer::common::Task::LOCKS_EXCLUDED(int)’
+   41 |   State GetState() LOCKS_EXCLUDED(mutex_);
+      |                    ^~~~~~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:48:52: error: expected ‘;’ at end of member declaration
+   48 |   void AddDependency(std::weak_ptr<Task> dependency) LOCKS_EXCLUDED(mutex_);
+      |                                                    ^
+      |                                                     ;
+/home/bianbu/cartographer/cartographer/common/task.h:48:69: error: ‘mutex_’ has not been declared
+   48 |   void AddDependency(std::weak_ptr<Task> dependency) LOCKS_EXCLUDED(mutex_);
+      |                                                                     ^~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:48:54: error: ‘int cartographer::common::Task::LOCKS_EXCLUDED(int)’ cannot be overloaded with ‘int cartographer::common::Task::LOCKS_EXCLUDED(int)’
+   48 |   void AddDependency(std::weak_ptr<Task> dependency) LOCKS_EXCLUDED(mutex_);
+      |                                                      ^~~~~~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:41:20: note: previous declaration ‘int cartographer::common::Task::LOCKS_EXCLUDED(int)’
+   41 |   State GetState() LOCKS_EXCLUDED(mutex_);
+      |                    ^~~~~~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:55:16: error: expected ‘;’ at end of member declaration
+   55 |   void Execute() LOCKS_EXCLUDED(mutex_);
+      |                ^
+      |                 ;
+/home/bianbu/cartographer/cartographer/common/task.h:55:33: error: ‘mutex_’ has not been declared
+   55 |   void Execute() LOCKS_EXCLUDED(mutex_);
+      |                                 ^~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:55:18: error: ‘int cartographer::common::Task::LOCKS_EXCLUDED(int)’ cannot be overloaded with ‘int cartographer::common::Task::LOCKS_EXCLUDED(int)’
+   55 |   void Execute() LOCKS_EXCLUDED(mutex_);
+      |                  ^~~~~~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:41:20: note: previous declaration ‘int cartographer::common::Task::LOCKS_EXCLUDED(int)’
+   41 |   State GetState() LOCKS_EXCLUDED(mutex_);
+      |                    ^~~~~~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:58:54: error: expected ‘;’ at end of member declaration
+   58 |   void SetThreadPool(ThreadPoolInterface* thread_pool) LOCKS_EXCLUDED(mutex_);
+      |                                                      ^
+      |                                                       ;
+/home/bianbu/cartographer/cartographer/common/task.h:58:71: error: ‘mutex_’ has not been declared
+   58 |   void SetThreadPool(ThreadPoolInterface* thread_pool) LOCKS_EXCLUDED(mutex_);
+      |                                                                       ^~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:58:56: error: ‘int cartographer::common::Task::LOCKS_EXCLUDED(int)’ cannot be overloaded with ‘int cartographer::common::Task::LOCKS_EXCLUDED(int)’
+   58 |   void SetThreadPool(ThreadPoolInterface* thread_pool) LOCKS_EXCLUDED(mutex_);
+      |                                                        ^~~~~~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:41:20: note: previous declaration ‘int cartographer::common::Task::LOCKS_EXCLUDED(int)’
+   41 |   State GetState() LOCKS_EXCLUDED(mutex_);
+      |                    ^~~~~~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:64:12: error: expected ‘;’ at end of member declaration
+   64 |   WorkItem work_item_ GUARDED_BY(mutex_);
+      |            ^~~~~~~~~~
+      |                      ;
+/home/bianbu/cartographer/cartographer/common/task.h:64:34: error: ‘mutex_’ has not been declared
+   64 |   WorkItem work_item_ GUARDED_BY(mutex_);
+      |                                  ^~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:65:24: error: expected ‘;’ at end of member declaration
+   65 |   ThreadPoolInterface* thread_pool_to_notify_ GUARDED_BY(mutex_) = nullptr;
+      |                        ^~~~~~~~~~~~~~~~~~~~~~
+      |                                              ;
+/home/bianbu/cartographer/cartographer/common/task.h:65:58: error: ‘mutex_’ has not been declared
+   65 |   ThreadPoolInterface* thread_pool_to_notify_ GUARDED_BY(mutex_) = nullptr;
+      |                                                          ^~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:65:75: error: invalid pure specifier (only ‘= 0’ is allowed) before ‘;’ token
+   65 |   ThreadPoolInterface* thread_pool_to_notify_ GUARDED_BY(mutex_) = nullptr;
+      |                                                                           ^
+/home/bianbu/cartographer/cartographer/common/task.h:65:47: error: ‘int cartographer::common::Task::GUARDED_BY(int)’ cannot be overloaded with ‘int cartographer::common::Task::GUARDED_BY(int)’
+   65 |   ThreadPoolInterface* thread_pool_to_notify_ GUARDED_BY(mutex_) = nullptr;
+      |                                               ^~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:64:23: note: previous declaration ‘int cartographer::common::Task::GUARDED_BY(int)’
+   64 |   WorkItem work_item_ GUARDED_BY(mutex_);
+      |                       ^~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:66:9: error: expected ‘;’ at end of member declaration
+   66 |   State state_ GUARDED_BY(mutex_) = NEW;
+      |         ^~~~~~
+      |               ;
+/home/bianbu/cartographer/cartographer/common/task.h:66:27: error: ‘mutex_’ has not been declared
+   66 |   State state_ GUARDED_BY(mutex_) = NEW;
+      |                           ^~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:66:40: error: invalid pure specifier (only ‘= 0’ is allowed) before ‘;’ token
+   66 |   State state_ GUARDED_BY(mutex_) = NEW;
+      |                                        ^
+/home/bianbu/cartographer/cartographer/common/task.h:66:16: error: ‘int cartographer::common::Task::GUARDED_BY(int)’ cannot be overloaded with ‘int cartographer::common::Task::GUARDED_BY(int)’
+   66 |   State state_ GUARDED_BY(mutex_) = NEW;
+      |                ^~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:64:23: note: previous declaration ‘int cartographer::common::Task::GUARDED_BY(int)’
+   64 |   WorkItem work_item_ GUARDED_BY(mutex_);
+      |                       ^~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:67:16: error: expected ‘;’ at end of member declaration
+   67 |   unsigned int uncompleted_dependencies_ GUARDED_BY(mutex_) = 0;
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         ;
+/home/bianbu/cartographer/cartographer/common/task.h:67:53: error: ‘mutex_’ has not been declared
+   67 |   unsigned int uncompleted_dependencies_ GUARDED_BY(mutex_) = 0;
+      |                                                     ^~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:67:42: error: ‘int cartographer::common::Task::GUARDED_BY(int)’ cannot be overloaded with ‘int cartographer::common::Task::GUARDED_BY(int)’
+   67 |   unsigned int uncompleted_dependencies_ GUARDED_BY(mutex_) = 0;
+      |                                          ^~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:64:23: note: previous declaration ‘int cartographer::common::Task::GUARDED_BY(int)’
+   64 |   WorkItem work_item_ GUARDED_BY(mutex_);
+      |                       ^~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:68:19: error: expected ‘;’ at end of member declaration
+   68 |   std::set<Task*> dependent_tasks_ GUARDED_BY(mutex_);
+      |                   ^~~~~~~~~~~~~~~~
+      |                                   ;
+/home/bianbu/cartographer/cartographer/common/task.h:68:47: error: ‘mutex_’ has not been declared
+   68 |   std::set<Task*> dependent_tasks_ GUARDED_BY(mutex_);
+      |                                               ^~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:68:36: error: ‘int cartographer::common::Task::GUARDED_BY(int)’ cannot be overloaded with ‘int cartographer::common::Task::GUARDED_BY(int)’
+   68 |   std::set<Task*> dependent_tasks_ GUARDED_BY(mutex_);
+      |                                    ^~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:64:23: note: previous declaration ‘int cartographer::common::Task::GUARDED_BY(int)’
+   64 |   WorkItem work_item_ GUARDED_BY(mutex_);
+      |                       ^~~~~~~~~~
+[3/324] Building CXX object CMakeFiles/cartographer.dir/cartographer/common/internal/testing/thread_pool_for_testing.cc.o
+FAILED: CMakeFiles/cartographer.dir/cartographer/common/internal/testing/thread_pool_for_testing.cc.o 
+/usr/bin/c++ -DBOOST_IOSTREAMS_DYN_LINK -DBOOST_IOSTREAMS_NO_LIB -DGFLAGS_IS_A_DLL=0 -DGLOG_CUSTOM_PREFIX_SUPPORT -I/home/bianbu/cartographer/build -isystem /usr/include/eigen3 -isystem /home/bianbu/cartographer -isystem /usr/include/lua5.3 -O3 -DNDEBUG  -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -MD -MT CMakeFiles/cartographer.dir/cartographer/common/internal/testing/thread_pool_for_testing.cc.o -MF CMakeFiles/cartographer.dir/cartographer/common/internal/testing/thread_pool_for_testing.cc.o.d -o CMakeFiles/cartographer.dir/cartographer/common/internal/testing/thread_pool_for_testing.cc.o -c /home/bianbu/cartographer/cartographer/common/internal/testing/thread_pool_for_testing.cc
+In file included from /home/bianbu/cartographer/cartographer/common/thread_pool.h:28,
+                 from /home/bianbu/cartographer/cartographer/common/internal/testing/thread_pool_for_testing.h:26,
+                 from /home/bianbu/cartographer/cartographer/common/internal/testing/thread_pool_for_testing.cc:17:
+/home/bianbu/cartographer/cartographer/common/task.h:41:18: error: expected ‘;’ at end of member declaration
+   41 |   State GetState() LOCKS_EXCLUDED(mutex_);
+      |                  ^
+      |                   ;
+/home/bianbu/cartographer/cartographer/common/task.h:41:35: error: ‘mutex_’ has not been declared
+   41 |   State GetState() LOCKS_EXCLUDED(mutex_);
+      |                                   ^~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:44:45: error: expected ‘;’ at end of member declaration
+   44 |   void SetWorkItem(const WorkItem& work_item) LOCKS_EXCLUDED(mutex_);
+      |                                             ^
+      |                                              ;
+/home/bianbu/cartographer/cartographer/common/task.h:44:62: error: ‘mutex_’ has not been declared
+   44 |   void SetWorkItem(const WorkItem& work_item) LOCKS_EXCLUDED(mutex_);
+      |                                                              ^~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:44:47: error: ‘int cartographer::common::Task::LOCKS_EXCLUDED(int)’ cannot be overloaded with ‘int cartographer::common::Task::LOCKS_EXCLUDED(int)’
+   44 |   void SetWorkItem(const WorkItem& work_item) LOCKS_EXCLUDED(mutex_);
+      |                                               ^~~~~~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:41:20: note: previous declaration ‘int cartographer::common::Task::LOCKS_EXCLUDED(int)’
+   41 |   State GetState() LOCKS_EXCLUDED(mutex_);
+      |                    ^~~~~~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:48:52: error: expected ‘;’ at end of member declaration
+   48 |   void AddDependency(std::weak_ptr<Task> dependency) LOCKS_EXCLUDED(mutex_);
+      |                                                    ^
+      |                                                     ;
+/home/bianbu/cartographer/cartographer/common/task.h:48:69: error: ‘mutex_’ has not been declared
+   48 |   void AddDependency(std::weak_ptr<Task> dependency) LOCKS_EXCLUDED(mutex_);
+      |                                                                     ^~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:48:54: error: ‘int cartographer::common::Task::LOCKS_EXCLUDED(int)’ cannot be overloaded with ‘int cartographer::common::Task::LOCKS_EXCLUDED(int)’
+   48 |   void AddDependency(std::weak_ptr<Task> dependency) LOCKS_EXCLUDED(mutex_);
+      |                                                      ^~~~~~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:41:20: note: previous declaration ‘int cartographer::common::Task::LOCKS_EXCLUDED(int)’
+   41 |   State GetState() LOCKS_EXCLUDED(mutex_);
+      |                    ^~~~~~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:55:16: error: expected ‘;’ at end of member declaration
+   55 |   void Execute() LOCKS_EXCLUDED(mutex_);
+      |                ^
+      |                 ;
+/home/bianbu/cartographer/cartographer/common/task.h:55:33: error: ‘mutex_’ has not been declared
+   55 |   void Execute() LOCKS_EXCLUDED(mutex_);
+      |                                 ^~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:55:18: error: ‘int cartographer::common::Task::LOCKS_EXCLUDED(int)’ cannot be overloaded with ‘int cartographer::common::Task::LOCKS_EXCLUDED(int)’
+   55 |   void Execute() LOCKS_EXCLUDED(mutex_);
+      |                  ^~~~~~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:41:20: note: previous declaration ‘int cartographer::common::Task::LOCKS_EXCLUDED(int)’
+   41 |   State GetState() LOCKS_EXCLUDED(mutex_);
+      |                    ^~~~~~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:58:54: error: expected ‘;’ at end of member declaration
+   58 |   void SetThreadPool(ThreadPoolInterface* thread_pool) LOCKS_EXCLUDED(mutex_);
+      |                                                      ^
+      |                                                       ;
+/home/bianbu/cartographer/cartographer/common/task.h:58:71: error: ‘mutex_’ has not been declared
+   58 |   void SetThreadPool(ThreadPoolInterface* thread_pool) LOCKS_EXCLUDED(mutex_);
+      |                                                                       ^~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:58:56: error: ‘int cartographer::common::Task::LOCKS_EXCLUDED(int)’ cannot be overloaded with ‘int cartographer::common::Task::LOCKS_EXCLUDED(int)’
+   58 |   void SetThreadPool(ThreadPoolInterface* thread_pool) LOCKS_EXCLUDED(mutex_);
+      |                                                        ^~~~~~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:41:20: note: previous declaration ‘int cartographer::common::Task::LOCKS_EXCLUDED(int)’
+   41 |   State GetState() LOCKS_EXCLUDED(mutex_);
+      |                    ^~~~~~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:64:12: error: expected ‘;’ at end of member declaration
+   64 |   WorkItem work_item_ GUARDED_BY(mutex_);
+      |            ^~~~~~~~~~
+      |                      ;
+/home/bianbu/cartographer/cartographer/common/task.h:64:34: error: ‘mutex_’ has not been declared
+   64 |   WorkItem work_item_ GUARDED_BY(mutex_);
+      |                                  ^~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:65:24: error: expected ‘;’ at end of member declaration
+   65 |   ThreadPoolInterface* thread_pool_to_notify_ GUARDED_BY(mutex_) = nullptr;
+      |                        ^~~~~~~~~~~~~~~~~~~~~~
+      |                                              ;
+/home/bianbu/cartographer/cartographer/common/task.h:65:58: error: ‘mutex_’ has not been declared
+   65 |   ThreadPoolInterface* thread_pool_to_notify_ GUARDED_BY(mutex_) = nullptr;
+      |                                                          ^~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:65:75: error: invalid pure specifier (only ‘= 0’ is allowed) before ‘;’ token
+   65 |   ThreadPoolInterface* thread_pool_to_notify_ GUARDED_BY(mutex_) = nullptr;
+      |                                                                           ^
+/home/bianbu/cartographer/cartographer/common/task.h:65:47: error: ‘int cartographer::common::Task::GUARDED_BY(int)’ cannot be overloaded with ‘int cartographer::common::Task::GUARDED_BY(int)’
+   65 |   ThreadPoolInterface* thread_pool_to_notify_ GUARDED_BY(mutex_) = nullptr;
+      |                                               ^~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:64:23: note: previous declaration ‘int cartographer::common::Task::GUARDED_BY(int)’
+   64 |   WorkItem work_item_ GUARDED_BY(mutex_);
+      |                       ^~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:66:9: error: expected ‘;’ at end of member declaration
+   66 |   State state_ GUARDED_BY(mutex_) = NEW;
+      |         ^~~~~~
+      |               ;
+/home/bianbu/cartographer/cartographer/common/task.h:66:27: error: ‘mutex_’ has not been declared
+   66 |   State state_ GUARDED_BY(mutex_) = NEW;
+      |                           ^~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:66:40: error: invalid pure specifier (only ‘= 0’ is allowed) before ‘;’ token
+   66 |   State state_ GUARDED_BY(mutex_) = NEW;
+      |                                        ^
+/home/bianbu/cartographer/cartographer/common/task.h:66:16: error: ‘int cartographer::common::Task::GUARDED_BY(int)’ cannot be overloaded with ‘int cartographer::common::Task::GUARDED_BY(int)’
+   66 |   State state_ GUARDED_BY(mutex_) = NEW;
+      |                ^~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:64:23: note: previous declaration ‘int cartographer::common::Task::GUARDED_BY(int)’
+   64 |   WorkItem work_item_ GUARDED_BY(mutex_);
+      |                       ^~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:67:16: error: expected ‘;’ at end of member declaration
+   67 |   unsigned int uncompleted_dependencies_ GUARDED_BY(mutex_) = 0;
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                         ;
+/home/bianbu/cartographer/cartographer/common/task.h:67:53: error: ‘mutex_’ has not been declared
+   67 |   unsigned int uncompleted_dependencies_ GUARDED_BY(mutex_) = 0;
+      |                                                     ^~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:67:42: error: ‘int cartographer::common::Task::GUARDED_BY(int)’ cannot be overloaded with ‘int cartographer::common::Task::GUARDED_BY(int)’
+   67 |   unsigned int uncompleted_dependencies_ GUARDED_BY(mutex_) = 0;
+      |                                          ^~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:64:23: note: previous declaration ‘int cartographer::common::Task::GUARDED_BY(int)’
+   64 |   WorkItem work_item_ GUARDED_BY(mutex_);
+      |                       ^~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:68:19: error: expected ‘;’ at end of member declaration
+   68 |   std::set<Task*> dependent_tasks_ GUARDED_BY(mutex_);
+      |                   ^~~~~~~~~~~~~~~~
+      |                                   ;
+/home/bianbu/cartographer/cartographer/common/task.h:68:47: error: ‘mutex_’ has not been declared
+   68 |   std::set<Task*> dependent_tasks_ GUARDED_BY(mutex_);
+      |                                               ^~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:68:36: error: ‘int cartographer::common::Task::GUARDED_BY(int)’ cannot be overloaded with ‘int cartographer::common::Task::GUARDED_BY(int)’
+   68 |   std::set<Task*> dependent_tasks_ GUARDED_BY(mutex_);
+      |                                    ^~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/task.h:64:23: note: previous declaration ‘int cartographer::common::Task::GUARDED_BY(int)’
+   64 |   WorkItem work_item_ GUARDED_BY(mutex_);
+      |                       ^~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/thread_pool.h:67:58: error: expected ‘;’ at end of member declaration
+   67 |   std::weak_ptr<Task> Schedule(std::unique_ptr<Task> task)
+      |                                                          ^
+      |                                                           ;
+/home/bianbu/cartographer/cartographer/common/thread_pool.h:68:22: error: ‘mutex_’ has not been declared
+   68 |       LOCKS_EXCLUDED(mutex_) override;
+      |                      ^~~~~~
+/home/bianbu/cartographer/cartographer/common/thread_pool.h:73:46: error: expected ‘;’ at end of member declaration
+   73 |   void NotifyDependenciesCompleted(Task* task) LOCKS_EXCLUDED(mutex_) override;
+      |                                              ^
+      |                                               ;
+/home/bianbu/cartographer/cartographer/common/thread_pool.h:73:63: error: ‘mutex_’ has not been declared
+   73 |   void NotifyDependenciesCompleted(Task* task) LOCKS_EXCLUDED(mutex_) override;
+      |                                                               ^~~~~~
+/home/bianbu/cartographer/cartographer/common/thread_pool.h:73:48: error: ‘int cartographer::common::ThreadPool::LOCKS_EXCLUDED(int)’ cannot be overloaded with ‘int cartographer::common::ThreadPool::LOCKS_EXCLUDED(int)’
+   73 |   void NotifyDependenciesCompleted(Task* task) LOCKS_EXCLUDED(mutex_) override;
+      |                                                ^~~~~~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/thread_pool.h:68:7: note: previous declaration ‘int cartographer::common::ThreadPool::LOCKS_EXCLUDED(int)’
+   68 |       LOCKS_EXCLUDED(mutex_) override;
+      |       ^~~~~~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/thread_pool.h:76:8: error: expected ‘;’ at end of member declaration
+   76 |   bool running_ GUARDED_BY(mutex_) = true;
+      |        ^~~~~~~~
+      |                ;
+/home/bianbu/cartographer/cartographer/common/thread_pool.h:76:28: error: ‘mutex_’ is not a type
+   76 |   bool running_ GUARDED_BY(mutex_) = true;
+      |                            ^~~~~~
+/home/bianbu/cartographer/cartographer/common/thread_pool.h:76:42: error: invalid pure specifier (only ‘= 0’ is allowed) before ‘;’ token
+   76 |   bool running_ GUARDED_BY(mutex_) = true;
+      |                                          ^
+/home/bianbu/cartographer/cartographer/common/thread_pool.h:77:28: error: expected ‘;’ at end of member declaration
+   77 |   std::vector<std::thread> pool_ GUARDED_BY(mutex_);
+      |                            ^~~~~
+      |                                 ;
+/home/bianbu/cartographer/cartographer/common/thread_pool.h:77:45: error: ‘mutex_’ is not a type
+   77 |   std::vector<std::thread> pool_ GUARDED_BY(mutex_);
+      |                                             ^~~~~~
+/home/bianbu/cartographer/cartographer/common/thread_pool.h:77:34: error: ‘int cartographer::common::ThreadPool::GUARDED_BY(int)’ cannot be overloaded with ‘int cartographer::common::ThreadPool::GUARDED_BY(int)’
+   77 |   std::vector<std::thread> pool_ GUARDED_BY(mutex_);
+      |                                  ^~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/thread_pool.h:76:17: note: previous declaration ‘int cartographer::common::ThreadPool::GUARDED_BY(int)’
+   76 |   bool running_ GUARDED_BY(mutex_) = true;
+      |                 ^~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/thread_pool.h:78:37: error: expected ‘;’ at end of member declaration
+   78 |   std::deque<std::shared_ptr<Task>> task_queue_ GUARDED_BY(mutex_);
+      |                                     ^~~~~~~~~~~
+      |                                                ;
+/home/bianbu/cartographer/cartographer/common/thread_pool.h:78:60: error: ‘mutex_’ is not a type
+   78 |   std::deque<std::shared_ptr<Task>> task_queue_ GUARDED_BY(mutex_);
+      |                                                            ^~~~~~
+/home/bianbu/cartographer/cartographer/common/thread_pool.h:78:49: error: ‘int cartographer::common::ThreadPool::GUARDED_BY(int)’ cannot be overloaded with ‘int cartographer::common::ThreadPool::GUARDED_BY(int)’
+   78 |   std::deque<std::shared_ptr<Task>> task_queue_ GUARDED_BY(mutex_);
+      |                                                 ^~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/thread_pool.h:76:17: note: previous declaration ‘int cartographer::common::ThreadPool::GUARDED_BY(int)’
+   76 |   bool running_ GUARDED_BY(mutex_) = true;
+      |                 ^~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/thread_pool.h:79:53: error: expected ‘;’ at end of member declaration
+   79 |   absl::flat_hash_map<Task*, std::shared_ptr<Task>> tasks_not_ready_
+      |                                                     ^~~~~~~~~~~~~~~~
+      |                                                                     ;
+/home/bianbu/cartographer/cartographer/common/thread_pool.h:80:18: error: ‘mutex_’ is not a type
+   80 |       GUARDED_BY(mutex_);
+      |                  ^~~~~~
+/home/bianbu/cartographer/cartographer/common/thread_pool.h:80:7: error: ‘int cartographer::common::ThreadPool::GUARDED_BY(int)’ cannot be overloaded with ‘int cartographer::common::ThreadPool::GUARDED_BY(int)’
+   80 |       GUARDED_BY(mutex_);
+      |       ^~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/thread_pool.h:76:17: note: previous declaration ‘int cartographer::common::ThreadPool::GUARDED_BY(int)’
+   76 |   bool running_ GUARDED_BY(mutex_) = true;
+      |                 ^~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/thread_pool.h:68:7: error: ‘int cartographer::common::ThreadPool::LOCKS_EXCLUDED(int)’ marked ‘override’, but does not override
+   68 |       LOCKS_EXCLUDED(mutex_) override;
+      |       ^~~~~~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/internal/testing/thread_pool_for_testing.h:37:58: error: expected ‘;’ at end of member declaration
+   37 |   std::weak_ptr<Task> Schedule(std::unique_ptr<Task> task)
+      |                                                          ^
+      |                                                           ;
+/home/bianbu/cartographer/cartographer/common/internal/testing/thread_pool_for_testing.h:38:22: error: ‘mutex_’ has not been declared
+   38 |       LOCKS_EXCLUDED(mutex_) override;
+      |                      ^~~~~~
+/home/bianbu/cartographer/cartographer/common/internal/testing/thread_pool_for_testing.h:47:46: error: expected ‘;’ at end of member declaration
+   47 |   void NotifyDependenciesCompleted(Task* task) LOCKS_EXCLUDED(mutex_) override;
+      |                                              ^
+      |                                               ;
+/home/bianbu/cartographer/cartographer/common/internal/testing/thread_pool_for_testing.h:47:63: error: ‘mutex_’ has not been declared
+   47 |   void NotifyDependenciesCompleted(Task* task) LOCKS_EXCLUDED(mutex_) override;
+      |                                                               ^~~~~~
+/home/bianbu/cartographer/cartographer/common/internal/testing/thread_pool_for_testing.h:47:48: error: ‘int cartographer::common::testing::ThreadPoolForTesting::LOCKS_EXCLUDED(int)’ cannot be overloaded with ‘int cartographer::common::testing::ThreadPoolForTesting::LOCKS_EXCLUDED(int)’
+   47 |   void NotifyDependenciesCompleted(Task* task) LOCKS_EXCLUDED(mutex_) override;
+      |                                                ^~~~~~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/internal/testing/thread_pool_for_testing.h:38:7: note: previous declaration ‘int cartographer::common::testing::ThreadPoolForTesting::LOCKS_EXCLUDED(int)’
+   38 |       LOCKS_EXCLUDED(mutex_) override;
+      |       ^~~~~~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/internal/testing/thread_pool_for_testing.h:50:8: error: expected ‘;’ at end of member declaration
+   50 |   bool running_ GUARDED_BY(mutex_) = true;
+      |        ^~~~~~~~
+      |                ;
+/home/bianbu/cartographer/cartographer/common/internal/testing/thread_pool_for_testing.h:50:28: error: ‘mutex_’ is not a type
+   50 |   bool running_ GUARDED_BY(mutex_) = true;
+      |                            ^~~~~~
+/home/bianbu/cartographer/cartographer/common/internal/testing/thread_pool_for_testing.h:50:42: error: invalid pure specifier (only ‘= 0’ is allowed) before ‘;’ token
+   50 |   bool running_ GUARDED_BY(mutex_) = true;
+      |                                          ^
+/home/bianbu/cartographer/cartographer/common/internal/testing/thread_pool_for_testing.h:51:8: error: expected ‘;’ at end of member declaration
+   51 |   bool idle_ GUARDED_BY(mutex_) = true;
+      |        ^~~~~
+      |             ;
+/home/bianbu/cartographer/cartographer/common/internal/testing/thread_pool_for_testing.h:51:25: error: ‘mutex_’ is not a type
+   51 |   bool idle_ GUARDED_BY(mutex_) = true;
+      |                         ^~~~~~
+/home/bianbu/cartographer/cartographer/common/internal/testing/thread_pool_for_testing.h:51:39: error: invalid pure specifier (only ‘= 0’ is allowed) before ‘;’ token
+   51 |   bool idle_ GUARDED_BY(mutex_) = true;
+      |                                       ^
+/home/bianbu/cartographer/cartographer/common/internal/testing/thread_pool_for_testing.h:51:14: error: ‘int cartographer::common::testing::ThreadPoolForTesting::GUARDED_BY(int)’ cannot be overloaded with ‘int cartographer::common::testing::ThreadPoolForTesting::GUARDED_BY(int)’
+   51 |   bool idle_ GUARDED_BY(mutex_) = true;
+      |              ^~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/internal/testing/thread_pool_for_testing.h:50:17: note: previous declaration ‘int cartographer::common::testing::ThreadPoolForTesting::GUARDED_BY(int)’
+   50 |   bool running_ GUARDED_BY(mutex_) = true;
+      |                 ^~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/internal/testing/thread_pool_for_testing.h:52:37: error: expected ‘;’ at end of member declaration
+   52 |   std::deque<std::shared_ptr<Task>> task_queue_ GUARDED_BY(mutex_);
+      |                                     ^~~~~~~~~~~
+      |                                                ;
+/home/bianbu/cartographer/cartographer/common/internal/testing/thread_pool_for_testing.h:52:60: error: ‘mutex_’ is not a type
+   52 |   std::deque<std::shared_ptr<Task>> task_queue_ GUARDED_BY(mutex_);
+      |                                                            ^~~~~~
+/home/bianbu/cartographer/cartographer/common/internal/testing/thread_pool_for_testing.h:52:49: error: ‘int cartographer::common::testing::ThreadPoolForTesting::GUARDED_BY(int)’ cannot be overloaded with ‘int cartographer::common::testing::ThreadPoolForTesting::GUARDED_BY(int)’
+   52 |   std::deque<std::shared_ptr<Task>> task_queue_ GUARDED_BY(mutex_);
+      |                                                 ^~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/internal/testing/thread_pool_for_testing.h:50:17: note: previous declaration ‘int cartographer::common::testing::ThreadPoolForTesting::GUARDED_BY(int)’
+   50 |   bool running_ GUARDED_BY(mutex_) = true;
+      |                 ^~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/internal/testing/thread_pool_for_testing.h:53:42: error: expected ‘;’ at end of member declaration
+   53 |   std::map<Task*, std::shared_ptr<Task>> tasks_not_ready_ GUARDED_BY(mutex_);
+      |                                          ^~~~~~~~~~~~~~~~
+      |                                                          ;
+/home/bianbu/cartographer/cartographer/common/internal/testing/thread_pool_for_testing.h:53:70: error: ‘mutex_’ is not a type
+   53 |   std::map<Task*, std::shared_ptr<Task>> tasks_not_ready_ GUARDED_BY(mutex_);
+      |                                                                      ^~~~~~
+/home/bianbu/cartographer/cartographer/common/internal/testing/thread_pool_for_testing.h:53:59: error: ‘int cartographer::common::testing::ThreadPoolForTesting::GUARDED_BY(int)’ cannot be overloaded with ‘int cartographer::common::testing::ThreadPoolForTesting::GUARDED_BY(int)’
+   53 |   std::map<Task*, std::shared_ptr<Task>> tasks_not_ready_ GUARDED_BY(mutex_);
+      |                                                           ^~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/internal/testing/thread_pool_for_testing.h:50:17: note: previous declaration ‘int cartographer::common::testing::ThreadPoolForTesting::GUARDED_BY(int)’
+   50 |   bool running_ GUARDED_BY(mutex_) = true;
+      |                 ^~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/internal/testing/thread_pool_for_testing.h:54:15: error: expected ‘;’ at end of member declaration
+   54 |   std::thread thread_ GUARDED_BY(mutex_);
+      |               ^~~~~~~
+      |                      ;
+/home/bianbu/cartographer/cartographer/common/internal/testing/thread_pool_for_testing.h:54:34: error: ‘mutex_’ is not a type
+   54 |   std::thread thread_ GUARDED_BY(mutex_);
+      |                                  ^~~~~~
+/home/bianbu/cartographer/cartographer/common/internal/testing/thread_pool_for_testing.h:54:23: error: ‘int cartographer::common::testing::ThreadPoolForTesting::GUARDED_BY(int)’ cannot be overloaded with ‘int cartographer::common::testing::ThreadPoolForTesting::GUARDED_BY(int)’
+   54 |   std::thread thread_ GUARDED_BY(mutex_);
+      |                       ^~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/internal/testing/thread_pool_for_testing.h:50:17: note: previous declaration ‘int cartographer::common::testing::ThreadPoolForTesting::GUARDED_BY(int)’
+   50 |   bool running_ GUARDED_BY(mutex_) = true;
+      |                 ^~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/internal/testing/thread_pool_for_testing.h:38:7: error: ‘int cartographer::common::testing::ThreadPoolForTesting::LOCKS_EXCLUDED(int)’ marked ‘override’, but does not override
+   38 |       LOCKS_EXCLUDED(mutex_) override;
+      |       ^~~~~~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/internal/testing/thread_pool_for_testing.cc: In lambda function:
+/home/bianbu/cartographer/cartographer/common/internal/testing/thread_pool_for_testing.cc:75:30: error: expected ‘{’ before ‘EXCLUSIVE_LOCKS_REQUIRED’
+   75 |                              EXCLUSIVE_LOCKS_REQUIRED(mutex_) { return idle_; };
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/internal/testing/thread_pool_for_testing.cc: In member function ‘void cartographer::common::testing::ThreadPoolForTesting::WaitUntilIdle()’:
+/home/bianbu/cartographer/cartographer/common/internal/testing/thread_pool_for_testing.cc:75:30: error: expected ‘,’ or ‘;’ before ‘EXCLUSIVE_LOCKS_REQUIRED’
+/home/bianbu/cartographer/cartographer/common/internal/testing/thread_pool_for_testing.cc:79:61: error: no matching function for call to ‘absl::debian5::Condition::Condition(const cartographer::common::testing::ThreadPoolForTesting::WaitUntilIdle()::<lambda()>*)’
+   79 |       if (mutex_.AwaitWithTimeout(absl::Condition(&predicate),
+      |                                                             ^
+In file included from /home/bianbu/cartographer/cartographer/common/internal/testing/thread_pool_for_testing.h:25:
+/usr/include/absl/synchronization/mutex.h:759:12: note: candidate: ‘template<class T, class E> absl::debian5::Condition::Condition(const T*)’
+  759 |   explicit Condition(const T* obj)
+      |            ^~~~~~~~~
+/usr/include/absl/synchronization/mutex.h:759:12: note:   template argument deduction/substitution failed:
+/usr/include/absl/synchronization/mutex.h:757:47: error: invalid ‘static_cast’ from type ‘void (cartographer::common::testing::ThreadPoolForTesting::WaitUntilIdle()::<lambda()>::*)() const’ to type ‘bool (cartographer::common::testing::ThreadPoolForTesting::WaitUntilIdle()::<lambda()>::*)() const’
+  757 |   template <typename T, typename E = decltype(static_cast<bool (T::*)() const>(
+      |                                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  758 |                             &T::operator()))>
+      |                             ~~~~~~~~~~~~~~~    
+/usr/include/absl/synchronization/mutex.h:726:3: note: candidate: ‘template<class T> absl::debian5::Condition::Condition(const T*, bool (absl::debian5::internal::identity<T>::type::*)() const)’
+  726 |   Condition(const T* object,
+      |   ^~~~~~~~~
+/usr/include/absl/synchronization/mutex.h:726:3: note:   candidate expects 2 arguments, 1 provided
+/usr/include/absl/synchronization/mutex.h:722:3: note: candidate: ‘template<class T> absl::debian5::Condition::Condition(T*, bool (absl::debian5::internal::identity<T>::type::*)())’
+  722 |   Condition(T* object, bool (absl::internal::identity<T>::type::*method)());
+      |   ^~~~~~~~~
+/usr/include/absl/synchronization/mutex.h:722:3: note:   candidate expects 2 arguments, 1 provided
+/usr/include/absl/synchronization/mutex.h:711:3: note: candidate: ‘template<class T, class> absl::debian5::Condition::Condition(bool (*)(T*), typename absl::debian5::internal::identity<T>::type*)’
+  711 |   Condition(bool (*func)(T*), typename absl::internal::identity<T>::type* arg);
+      |   ^~~~~~~~~
+/usr/include/absl/synchronization/mutex.h:711:3: note:   candidate expects 2 arguments, 1 provided
+/usr/include/absl/synchronization/mutex.h:697:3: note: candidate: ‘template<class T> absl::debian5::Condition::Condition(bool (*)(T*), T*)’
+  697 |   Condition(bool (*func)(T*), T* arg);
+      |   ^~~~~~~~~
+/usr/include/absl/synchronization/mutex.h:697:3: note:   candidate expects 2 arguments, 1 provided
+/usr/include/absl/synchronization/mutex.h:837:13: note: candidate: ‘constexpr absl::debian5::Condition::Condition()’
+  837 |   constexpr Condition() = default;
+      |             ^~~~~~~~~
+/usr/include/absl/synchronization/mutex.h:837:13: note:   candidate expects 0 arguments, 1 provided
+/usr/include/absl/synchronization/mutex.h:730:12: note: candidate: ‘absl::debian5::Condition::Condition(const bool*)’
+  730 |   explicit Condition(const bool* cond);
+      |            ^~~~~~~~~
+/usr/include/absl/synchronization/mutex.h:730:34: note:   no known conversion for argument 1 from ‘const cartographer::common::testing::ThreadPoolForTesting::WaitUntilIdle()::<lambda()>*’ to ‘const bool*’
+  730 |   explicit Condition(const bool* cond);
+      |                      ~~~~~~~~~~~~^~~~
+/usr/include/absl/synchronization/mutex.h:685:3: note: candidate: ‘absl::debian5::Condition::Condition(bool (*)(void*), void*)’
+  685 |   Condition(bool (*func)(void*), void* arg);
+      |   ^~~~~~~~~
+/usr/include/absl/synchronization/mutex.h:685:3: note:   candidate expects 2 arguments, 1 provided
+/usr/include/absl/synchronization/mutex.h:682:7: note: candidate: ‘constexpr absl::debian5::Condition::Condition(const absl::debian5::Condition&)’
+  682 | class Condition {
+      |       ^~~~~~~~~
+/usr/include/absl/synchronization/mutex.h:682:7: note:   no known conversion for argument 1 from ‘const cartographer::common::testing::ThreadPoolForTesting::WaitUntilIdle()::<lambda()>*’ to ‘const absl::debian5::Condition&’
+/usr/include/absl/synchronization/mutex.h:682:7: note: candidate: ‘constexpr absl::debian5::Condition::Condition(absl::debian5::Condition&&)’
+/usr/include/absl/synchronization/mutex.h:682:7: note:   no known conversion for argument 1 from ‘const cartographer::common::testing::ThreadPoolForTesting::WaitUntilIdle()::<lambda()>*’ to ‘absl::debian5::Condition&&’
+/home/bianbu/cartographer/cartographer/common/internal/testing/thread_pool_for_testing.cc: In lambda function:
+/home/bianbu/cartographer/cartographer/common/internal/testing/thread_pool_for_testing.cc:88:35: error: expected ‘{’ before ‘EXCLUSIVE_LOCKS_REQUIRED’
+   88 |   const auto predicate = [this]() EXCLUSIVE_LOCKS_REQUIRED(mutex_) {
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/bianbu/cartographer/cartographer/common/internal/testing/thread_pool_for_testing.cc: In member function ‘void cartographer::common::testing::ThreadPoolForTesting::DoWork()’:
+/home/bianbu/cartographer/cartographer/common/internal/testing/thread_pool_for_testing.cc:88:35: error: expected ‘,’ or ‘;’ before ‘EXCLUSIVE_LOCKS_REQUIRED’
+/home/bianbu/cartographer/cartographer/common/internal/testing/thread_pool_for_testing.cc:95:57: error: no matching function for call to ‘absl::debian5::Condition::Condition(const cartographer::common::testing::ThreadPoolForTesting::DoWork()::<lambda()>*)’
+   95 |       mutex_.AwaitWithTimeout(absl::Condition(&predicate),
+      |                                                         ^
+/usr/include/absl/synchronization/mutex.h:759:12: note: candidate: ‘template<class T, class E> absl::debian5::Condition::Condition(const T*)’
+  759 |   explicit Condition(const T* obj)
+      |            ^~~~~~~~~
+/usr/include/absl/synchronization/mutex.h:759:12: note:   template argument deduction/substitution failed:
+/usr/include/absl/synchronization/mutex.h:757:47: error: invalid ‘static_cast’ from type ‘void (cartographer::common::testing::ThreadPoolForTesting::DoWork()::<lambda()>::*)() const’ to type ‘bool (cartographer::common::testing::ThreadPoolForTesting::DoWork()::<lambda()>::*)() const’
+  757 |   template <typename T, typename E = decltype(static_cast<bool (T::*)() const>(
+      |                                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  758 |                             &T::operator()))>
+      |                             ~~~~~~~~~~~~~~~    
+/usr/include/absl/synchronization/mutex.h:726:3: note: candidate: ‘template<class T> absl::debian5::Condition::Condition(const T*, bool (absl::debian5::internal::identity<T>::type::*)() const)’
+  726 |   Condition(const T* object,
+      |   ^~~~~~~~~
+/usr/include/absl/synchronization/mutex.h:726:3: note:   candidate expects 2 arguments, 1 provided
+/usr/include/absl/synchronization/mutex.h:722:3: note: candidate: ‘template<class T> absl::debian5::Condition::Condition(T*, bool (absl::debian5::internal::identity<T>::type::*)())’
+  722 |   Condition(T* object, bool (absl::internal::identity<T>::type::*method)());
+      |   ^~~~~~~~~
+/usr/include/absl/synchronization/mutex.h:722:3: note:   candidate expects 2 arguments, 1 provided
+/usr/include/absl/synchronization/mutex.h:711:3: note: candidate: ‘template<class T, class> absl::debian5::Condition::Condition(bool (*)(T*), typename absl::debian5::internal::identity<T>::type*)’
+  711 |   Condition(bool (*func)(T*), typename absl::internal::identity<T>::type* arg);
+      |   ^~~~~~~~~
+/usr/include/absl/synchronization/mutex.h:711:3: note:   candidate expects 2 arguments, 1 provided
+/usr/include/absl/synchronization/mutex.h:697:3: note: candidate: ‘template<class T> absl::debian5::Condition::Condition(bool (*)(T*), T*)’
+  697 |   Condition(bool (*func)(T*), T* arg);
+      |   ^~~~~~~~~
+/usr/include/absl/synchronization/mutex.h:697:3: note:   candidate expects 2 arguments, 1 provided
+/usr/include/absl/synchronization/mutex.h:837:13: note: candidate: ‘constexpr absl::debian5::Condition::Condition()’
+  837 |   constexpr Condition() = default;
+      |             ^~~~~~~~~
+/usr/include/absl/synchronization/mutex.h:837:13: note:   candidate expects 0 arguments, 1 provided
+/usr/include/absl/synchronization/mutex.h:730:12: note: candidate: ‘absl::debian5::Condition::Condition(const bool*)’
+  730 |   explicit Condition(const bool* cond);
+      |            ^~~~~~~~~
+/usr/include/absl/synchronization/mutex.h:730:34: note:   no known conversion for argument 1 from ‘const cartographer::common::testing::ThreadPoolForTesting::DoWork()::<lambda()>*’ to ‘const bool*’
+  730 |   explicit Condition(const bool* cond);
+      |                      ~~~~~~~~~~~~^~~~
+/usr/include/absl/synchronization/mutex.h:685:3: note: candidate: ‘absl::debian5::Condition::Condition(bool (*)(void*), void*)’
+  685 |   Condition(bool (*func)(void*), void* arg);
+      |   ^~~~~~~~~
+/usr/include/absl/synchronization/mutex.h:685:3: note:   candidate expects 2 arguments, 1 provided
+/usr/include/absl/synchronization/mutex.h:682:7: note: candidate: ‘constexpr absl::debian5::Condition::Condition(const absl::debian5::Condition&)’
+  682 | class Condition {
+      |       ^~~~~~~~~
+/usr/include/absl/synchronization/mutex.h:682:7: note:   no known conversion for argument 1 from ‘const cartographer::common::testing::ThreadPoolForTesting::DoWork()::<lambda()>*’ to ‘const absl::debian5::Condition&’
+/usr/include/absl/synchronization/mutex.h:682:7: note: candidate: ‘constexpr absl::debian5::Condition::Condition(absl::debian5::Condition&&)’
+/usr/include/absl/synchronization/mutex.h:682:7: note:   no known conversion for argument 1 from ‘const cartographer::common::testing::ThreadPoolForTesting::DoWork()::<lambda()>*’ to ‘absl::debian5::Condition&&’
+[4/324] Building CXX object CMakeFiles/cartographer.dir/cartographer/io/internal/in_memory_proto_stream.cc.o
+[5/324] Building CXX object CMakeFiles/cartographer.dir/cartographer/io/internal/pbstream_migrate.cc.o
+[6/324] Building CXX object CMakeFiles/cartographer.dir/cartographer/io/internal/pbstream_info.cc.o
+[7/324] Building CXX object CMakeFiles/cartographer.dir/cartographer/io/intensity_to_color_points_processor.cc.o
+[8/324] Building CXX object CMakeFiles/cartographer.dir/cartographer/io/image.cc.o
+[9/324] Building CXX object CMakeFiles/cartographer.dir/cartographer/io/hybrid_grid_points_processor.cc.o
+[10/324] Building CXX object CMakeFiles/cartographer.dir/cartographer/io/internal/mapping_state_serialization.cc.o
+ninja: build stopped: subcommand failed.
